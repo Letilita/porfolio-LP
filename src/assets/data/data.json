@@ -2,7 +2,12 @@
     "nombre": "Leticia Portillo",
     "backgroundImage": "assets/conway.png",
     "profesion": "Desarrolladora Full Stack",
-    "descripcion": "",
+    "linkIn": "https://www.linkedin.com/in/leticia-portillo-b62ba3103/",
+    "linkMail":"/contacto",
+    "linkWP":"",
+    "linkGH": "https://github.com/Letilita",
+    "linkIG":"https://instagram.com/letititbe?igshid=YmMyMTA2M2Y=",
+    "descripcion": "La <strong>diversidad</strong> en la formación, en el trabajo y en los intereses es algo pasado de moda. Hoy no está bien visto porque se tiende a pensar que se es 'poco especialista'. Sin embargo, es algo de mi persona que valoro mucho. Admito ante la mirada del lector que mi formación es diversa en distintas áreas. Cuando digo áreas diversas digo filosofía, digo traducción, alemán, investigación de mercado, digo programación (por suepuesto), incluso digo Gastronomía! <br><br>Mis intereses variados me llevan siempre a saber de todo un poco y tener una visión comprehensiva y abarcadora en todo lo que hago. Allí lo positivo del caso. En el desarrollo de páginas web, ese es mi <strong>valor agregado </strong>.<br><br> Hace unos años comencé a sumergirme en el mundo de la programación, encontrando en el <strong>desarrollo Full Stack</strong> mi lugar.<br><br> Mi experiencia de 11 años en gestión operativa de proyectos de investigación de mercado y Customer Expierence me aportan practicidad y eficiencia.<br><br> Si bien no tengo mucha experiencia en el desarrollo de páginas web, soy responsable, detallista y autoexigente y esto se traduce en trabajos de calidad.Te invito a revisar mi portfolio para comprobarlo.<br><br> Para saber más, hacé clic en cada aspecto",
     "imagenPersonal": "assets/letiTransp1.png",
     "experiencia":[
         {
@@ -133,6 +138,27 @@
                     } 
                 ]
             }
+            
+    
+        ],
+        "proyectos":  [
+            {
+                "nombre":"Cine Club AntiDomingo",
+                "descripcion":"Desarrollo de página web estática - Primer proyecto",
+                "fecha":"2020",
+                "imagen": "assets/cineClubAntidomingo.png",
+                "link":"https://github.com/Letilita/CineClubAntidomingo.git"                
+            },
+            {
+                "nombre":"Juego de la Vida",
+                "descripcion":"desarrollado con Python - pyGame",
+                "fecha":"2021",
+                "imagen": "assets/juego de la vida.gif",
+                "link":"https://github.com/Letilita/juegoDeLaVida.git"
+              
+            }
+            
         ]
+    
           
 }

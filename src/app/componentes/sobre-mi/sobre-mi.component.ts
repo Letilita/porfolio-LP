@@ -12,6 +12,7 @@ export class SobreMiComponent implements OnInit {
   foto: any;
   certificaciones: any;
   formacion: any;
+  descripcion:any;
   constructor(private datos: DataService) { }
 
   ngOnInit(): void {
@@ -21,6 +22,7 @@ export class SobreMiComponent implements OnInit {
       this.foto = data.imagenPersonal
       this.certificaciones = data.educacion.certificaciones;
       this.formacion = data.educacion.formacion;
+      this.descripcion =data.descripcion;
   } );
   }
 

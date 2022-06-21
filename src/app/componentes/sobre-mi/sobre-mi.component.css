@@ -61,3 +61,21 @@
     width: 70%;
     margin:auto;
 }
+
+i {
+    font-size: 0.75rem;
+}
+
+.icono-principal{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    
+}
+
+.mas-en-educacion{
+    font-size: 0.8rem;
+    color: black;
+    font-weight: bold;
+    margin: auto;
+}

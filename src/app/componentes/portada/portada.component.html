@@ -1,28 +1,38 @@
 <!-- Portada - importante que ocupe toda la pantalla -->
 <div id="section1" class="d-flex align-items-center justify-content-center bg-dark text-white text-center">
     <div class="mx-auto">
-        <h1 class="verde shadowArce">{{miPorfolio.nombre}}</h1>
-        <p class="lead shadowArce mb-4">{{miPorfolio.profesion}}</p>
-        
+        <div class="d-flex">
+            <h1 class="verde shadowArce">{{miPorfolio.nombre}}</h1>
+            <i class="fa-regular fa-pen-to-square m-3 verde shadowArce edicion"></i>
+        </div>
+        <div class="d-flex">
+            <p class="lead shadowArce mb-4">{{miPorfolio.profesion}}</p>
+            <i class="fa-regular fa-pen-to-square m-2  shadowArce edicion "></i>
+        </div>
         <ul class="list-inline">
             <li class="list-inline-item">
-                <a href="https://es-la.facebook.com/" target="_blank">
+                <a [href]="miPorfolio.linkIn" target="_blank">
                     <i class="fab fa-linkedin  lead hoverVerde"></i>
                 </a>
             <li class="list-inline-item">
-                <a href="https://www.instagram.com/?hl=es-la" target="_blank">
-                    <i class="fab fa-instagram  lead hoverVerde"></i>
+                <a [href]="miPorfolio.linkMail" target="_blank">
+                    <i class="fa-regular fa-envelope  lead hoverVerde"></i>
                 </a>
             </li>
             <li class="list-inline-item">
-            <a href="https://twitter.com/?lang=es" target="_blank">
+            <a [href]="miPorfolio.linkWP" target="_blank">
                 <i class="fab fa-whatsapp lead hoverVerde"></i>
             </a>
             </li>
             <li class="list-inline-item">
-                <a href="https://google.com/" target="_blank">
+                <a [href]="miPorfolio.linkGH" target="_blank">
                     <i class="fab fa-github lead hoverVerde"></i>
                 </a>
+            </li>
+            <li class="list-inline-item">
+                
+                <i class="fa-regular fa-pen-to-square mb-2 shadowArce edicion edicionLinks"></i>
+            
             </li>
         </ul>
     </div>

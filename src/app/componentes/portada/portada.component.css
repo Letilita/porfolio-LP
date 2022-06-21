@@ -7,3 +7,14 @@
     padding:100px 20px;  
     width: 100%; 
 }
+
+.edicion{
+    font-size: 0.7rem;
+    margin-left: 2rem
+}
+
+.edicionLinks{
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
