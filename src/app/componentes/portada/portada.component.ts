@@ -9,6 +9,7 @@ import { DataService } from 'src/app/servicios/data.service';
 export class PortadaComponent implements OnInit {
 
   miPorfolio: any;
+  edicion: Boolean = false;
 
   constructor( private datos: DataService) { }
 
@@ -16,7 +17,10 @@ export class PortadaComponent implements OnInit {
     this.datos.obtenerDatos().subscribe(data => {
       console.log(data);
       this.miPorfolio=data;
+      this.edicion=this.datos.logueado;
   } );
+  console.log(this.edicion)
+  
   }
 
 }

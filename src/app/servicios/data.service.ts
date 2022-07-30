@@ -8,10 +8,16 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
 
+  public logueado: Boolean = false;
+
   constructor( private http: HttpClient) { 
     
   }
   obtenerDatos(): Observable<any> {
     return this.http.get('assets/data/data.json')
+  }
+
+  public setLogueado(valor: Boolean){
+    this.logueado= valor;
   }
 }

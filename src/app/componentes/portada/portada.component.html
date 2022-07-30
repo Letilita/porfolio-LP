@@ -1,13 +1,13 @@
 <!-- Portada - importante que ocupe toda la pantalla -->
 <div id="section1" class="d-flex align-items-center justify-content-center bg-dark text-white text-center">
     <div class="mx-auto">
-        <div class="d-flex">
-            <h1 class="verde shadowArce">{{miPorfolio.nombre}}</h1>
-            <i class="fa-regular fa-pen-to-square m-3 verde shadowArce edicion"></i>
+        <div class="d-flex mx-auto text-center">
+            <h1 class="verde shadowArce text-center mx-auto">{{miPorfolio.nombre}}</h1>
+            <i class="fa-regular fa-pen-to-square m-3 verde shadowArce edicion" *ngIf="edicion"></i>
         </div>
-        <div class="d-flex">
-            <p class="lead shadowArce mb-4">{{miPorfolio.profesion}}</p>
-            <i class="fa-regular fa-pen-to-square m-2  shadowArce edicion "></i>
+        <div class="d-flex mx-auto text-center" >
+            <p class="lead shadowArce mb-4 text-center mx-auto">{{miPorfolio.profesion}}</p>
+            <i class="fa-regular fa-pen-to-square m-2  shadowArce edicion " *ngIf="edicion"></i>
         </div>
         <ul class="list-inline">
             <li class="list-inline-item">
@@ -31,7 +31,7 @@
             </li>
             <li class="list-inline-item">
                 
-                <i class="fa-regular fa-pen-to-square mb-2 shadowArce edicion edicionLinks"></i>
+                <i class="fa-regular fa-pen-to-square mb-2 shadowArce edicion edicionLinks" *ngIf="edicion"></i>
             
             </li>
         </ul>

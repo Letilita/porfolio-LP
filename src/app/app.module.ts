@@ -9,6 +9,8 @@ import { SobreMiComponent } from './componentes/sobre-mi/sobre-mi.component';
 import { ConocimientosComponent } from './componentes/conocimientos/conocimientos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { HttpClientModule} from '@angular/common/http';
+import { LoginComponent } from './componentes/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,12 +20,15 @@ import { HttpClientModule} from '@angular/common/http';
     ProyectosComponent,
     SobreMiComponent,
     ConocimientosComponent,
-    ContactoComponent
+    ContactoComponent,
+    LoginComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
     
   ],
   providers: [],

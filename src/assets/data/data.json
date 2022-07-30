@@ -1,7 +1,9 @@
 {
     "nombre": "Leticia Portillo",
     "backgroundImage": "assets/conway.png",
-    "profesion": "Desarrolladora Full Stack",
+    "profesion": "Desarrolladora Full Stack Jr.",
+    "email": "prueba@prueba.com",
+    "password": "prueba123",
     "linkIn": "https://www.linkedin.com/in/leticia-portillo-b62ba3103/",
     "linkMail":"/contacto",
     "linkWP":"",
@@ -14,7 +16,7 @@
             "Empresa":"Desarrolladora Web FullStack independiente",
             "logoEmpresa":"assets/LogoLetiChiquito(transparencia).png",
             "puesto":["Trabajos Free-Lance"],
-            "inicio":"marzo 2022",
+            "inicio":"septiembre 2022",
             "fin":"Actualidad"
         },
 
