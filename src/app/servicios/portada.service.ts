@@ -13,7 +13,7 @@ export class PortadaService {
   constructor(private http: HttpClient) { }
 
   public getUsuario(): Observable<Usuario>{
-    return this.http.get<Usuario>( `${this.apiServerUrl}/usuario/id/1` )
+    return this.http.get<Usuario>( this.apiServerUrl + '/usuario/id/1' )
   }
 
   public updateUsuario(usuario: Usuario): Observable<any>{

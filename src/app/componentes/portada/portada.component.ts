@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Usuario } from 'src/app/models/Usuario.model';
 import { DataService } from 'src/app/servicios/data.service';
+import { PortadaService } from 'src/app/servicios/portada.service';
 
 @Component({
   selector: 'app-portada',
@@ -7,19 +9,24 @@ import { DataService } from 'src/app/servicios/data.service';
   styleUrls: ['./portada.component.css']
 })
 export class PortadaComponent implements OnInit {
+  
+  public usuario: Usuario | undefined;
+  public usuarioEditado: Usuario | undefined;
+  
+  // miPorfolio: any;
+  // edicion: Boolean = false;
 
-  miPorfolio: any;
-  edicion: Boolean = false;
+  constructor( private portadaService: PortadaService) { }
 
-  constructor( private datos: DataService) { }
-
-  ngOnInit(): void {
-    this.datos.obtenerDatos().subscribe(data => {
-      console.log(data);
-      this.miPorfolio=data;
-      this.edicion=this.datos.logueado;
+  ngOnInit(): void {    
+    
+    this.portadaService.getUsuario().subscribe(data => {
+      
+      this.usuario=data;
+      console.log(this.usuario);
+     
   } );
-  console.log(this.edicion)
+  
   
   }
 
